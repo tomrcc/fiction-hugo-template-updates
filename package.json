@@ -10,8 +10,8 @@
     "javascript": "esbuild assets/js/index.js --bundle --outfile=assets/js/build.js",
     "bookshop-update": "npx @bookshop/up@latest",
     "fix-hugo": "hugo mod clean",
-    "pagefind": "npx -y pagefind@v0.7.1 -s public --bundle-dir ../static/_pagefind",
-    "remove-pagefind": "rm -r static/_pagefind",
+    "pagefind": "npx -y pagefind@v0.7.1 -s public --bundle-dir ../static/pagefind",
+    "remove-pagefind": "rm -r static/pagefind",
     "refresh-pagefind": "run-s build remove-pagefind pagefind"
   },
   "repository": {
