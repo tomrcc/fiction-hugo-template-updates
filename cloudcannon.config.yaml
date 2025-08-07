@@ -1,25 +1,41 @@
 collections_config:
   pages:
+    path: content
+    glob: 
+      - "!portfolios/*"
+      - "!posts/*"
+      - portfolios/_index.md
+      - posts/_index.md
+    icon: text_ad
     _enabled_editors:
       - visual
     schemas:
       page:
-        path: schemas/page.md
-    filter:
-      exclude:
-        - components.md
+        path: .cloudcannon/schemas/page.md
   portfolios:
+    path: content/portfolios
+    glob: 
+      - "!_index.md"
     schemas:
       default:
-        path: schemas/portfolio.md
+        path: .cloudcannon/schemas/portfolio.md
+    icon: work
     _enabled_editors:
       - visual
   posts:
+    path: content/posts
+    glob: 
+      - "!_index.md"
     schemas:
       default:
-        path: schemas/post.md
+        path: .cloudcannon/schemas/post.md
+    icon: newspaper
     _enabled_editors:
       - content
       - visual
-
-data_config: true
+  data:
+    path: data
+    disable_url: true
+    _inputs:
+      google_maps_api_key:
+        comment: Add your key if you want to use google maps features within the site

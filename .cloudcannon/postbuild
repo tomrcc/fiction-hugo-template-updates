@@ -1,3 +1,2 @@
 npx "@bookshop/generate"
-
 npx -y pagefind --source public
