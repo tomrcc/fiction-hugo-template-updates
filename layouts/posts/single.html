@@ -6,8 +6,9 @@
   <section class="blog-single" data-pagefind-body>
     <div class="container">
       <div class="row">
-        {{ partial "bookshop_bindings" `.Params.content_blocks` }}
-        {{ partial "bookshop_partial" (slice "page" .Params.content_blocks) }} 
+        <div class="text-center">
+          <h2 class="title">{{ .Params.heading }}</h2>
+        </div>
         <div class="col-md-9">
           <!-- Blog Left Sections 
                   =========================-->
@@ -37,7 +38,7 @@
               <h3><a class="blog-content-title" href="#">{{ .Params.title }}</a></h3>
               <div class="meta">
                 <div class="date">
-                  <p>{{ .Params.date.Format "02 Jan 2006" }}</p>
+                  <p>{{ .Params.date | time.Format ":date_medium" }}</p>
                 </div>
                 <div class="author">
                   <p>By {{ .Params.author }}</p>

@@ -45,14 +45,14 @@
                                 </a>
                                 <div class="meta">
                                     <div class="date">
-                                        <p>{{ .Params.date.Format "02 Jan 2006" }}</p>
+                                        <p>{{ .Params.date | time.Format ":date_medium" }}</p>
                                     </div>
                                     <div class="author">
                                         <p>By {{ .Params.author }}</p>
                                     </div>
                                 </div>
                                 <p class="{{if not (modBool $index 2)}}blog-description{{else}}blog-decisions{{end}}">{{ .Params.description }}</p>
-                                <a class="btn btn-default th-btn solid-btn" href="{{ .RelPermalink }}" role="button">{{ .Params.link.content }}
+                                <a class="btn btn-default th-btn solid-btn" href="{{ .RelPermalink }}" role="button">{{ .Params.link }}
                                     <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
                             </div>
                         </div>

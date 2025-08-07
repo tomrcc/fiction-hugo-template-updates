@@ -4,9 +4,7 @@ hero_blocks:
     heading: Our Blogs.
     subheading: We Ensure Quality Design.
     image: /images/header/blog-folding-img.jpg
-content_blocks:
-  - _bookshop_name: generic/heading
-    heading: Our Blog
+heading: Our Blog
 images:
   - image: 
     image_alt:
@@ -14,9 +12,7 @@ title:
 date: 
 author: 
 description: 
-link:
-  _bookshop_name: 
-  content: 
+link: 
 seo_options:
   description:
   featured_image: 

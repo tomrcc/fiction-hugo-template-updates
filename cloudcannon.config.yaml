@@ -80,6 +80,12 @@ collections_config:
         type: array
         options:
           structures: _structures.post_image
+      link:
+        type: text
+        comment: The text used for this post's link in the list of posts.
+      description:
+        type: text
+        comment: Used as the description for the post's preview in the list of posts.
     _structures:
       post_image:
         values:
@@ -100,6 +106,16 @@ collections_config:
         comment: Add your key if you want to use google maps features within the site
 
 _inputs:
+  content_blocks:
+    type: array
+    options:
+      structures: _structures.content_blocks
+  hero_blocks:
+    type: array
+    options:
+      structures: _structures.hero_blocks
+  text_content:
+    type: markdown
   seo_options:
     type: object
     options:
@@ -110,14 +126,9 @@ _inputs:
         subtext:
           - key: page_description
           - 'Update SEO values for the page'
-  hero_blocks:
-    type: array
-    options:
-      structures: _structures.hero_blocks
   type:
     hidden: true
-  text_content:
-    type: markdown
+
 
 _editables:
   content:

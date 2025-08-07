@@ -4,9 +4,7 @@ hero_blocks:
     heading: Our Blogs.
     subheading: We Ensure Quality Design.
     image: /images/header/blog-folding-img.jpg
-content_blocks:
-  - _bookshop_name: generic/heading
-    heading: Our Blog
+heading: Our Blog
 categories:
   - category1
 images:
@@ -17,11 +15,10 @@ images:
   - image: /images/blog/blog-img3.jpg
     image_alt: ""
 title: A Complete, Ranke Destinat Moines’ Good Bars.
-date: 22 Jan 2016
+date: 2016-01-22T00:00:00Z
 author: Michal Lomans
 description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonum euismod tincidunt ut laoreet dolore magna autem vel eum iriure dolor in.
-link:
-  content: Read More
+link: Read More
 seo_options:
   description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonum euismod tincidunt ut laoreet dolore magna autem vel eum iriure dolor in.
   featured_image:
