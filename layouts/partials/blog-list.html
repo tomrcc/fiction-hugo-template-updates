@@ -44,9 +44,11 @@
                                     <h4 class="blog-title">{{ .Params.title | safeHTML}}</h4>
                                 </a>
                                 <div class="meta">
-                                    <div class="date">
-                                        <p>{{ .Params.date | time.Format ":date_medium" }}</p>
-                                    </div>
+                                    {{ if .Params.date }}
+                                        <div class="date">
+                                            <p>{{ .Params.date | time.Format ":date_medium" }}</p>
+                                        </div>
+                                    {{ end }}
                                     <div class="author">
                                         <p>By {{ .Params.author }}</p>
                                     </div>
