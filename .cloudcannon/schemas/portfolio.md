@@ -4,17 +4,17 @@ hero_blocks:
     heading: Our Portfolio.
     subheading: We Ensure Quality Design.
     image: /images/header/portfolio-folding-img.jpg
-heading: Our Portfolio
-category: 
-image: 
-image_alt: 
-date: 
-title: 
-subtitle: 
-client: 
-services: 
-project_url: 
 content_blocks:
+  - _bookshop_name: sections/portfolio-details
+    heading: Our Portfolio
+    category: category-1
+    image: /images/portfolio/portfolio-img1.jpg
+    image_alt: Portfolio
+    date: 
+    title: 
+    client: 
+    services:
+    project_url:
   - _bookshop_name: sections/gallery
     content: 
     gallery_images: 

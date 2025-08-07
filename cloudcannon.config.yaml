@@ -82,7 +82,8 @@ _inputs:
     type: array
     options:
       structures: _structures.hero_blocks
-
+  type:
+    hidden: true
 
 
 _editables:
