@@ -116,6 +116,37 @@ collections_config:
     _inputs:
       google_maps_api_key:
         comment: Add your key if you want to use google maps features within the site
+      favicon:
+        type: image
+      contact:
+        type: object
+        options:
+          preview:
+            icon: contact_page
+      social_media:
+        type: object
+        options:
+          preview:
+            icon: communities
+      menu:
+        type: array
+        options:
+          structures: _structures.menu_items
+      about:
+        type: textarea
+    _structures:
+      menu_items:
+        values:
+          - value:
+              name: 
+              url:
+              open_in_new_tab: false
+            _inputs:
+              open_in_new_tab:
+                type: switch
+            preview:
+              icon: link
+      
 
 _inputs:
   content_blocks:
