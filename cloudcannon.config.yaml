@@ -53,6 +53,11 @@ collections_config:
               - key: image
             text:
               - key: heading
+      portfolio_details.image:
+        type: image
+        options:
+          paths:
+            uploads: images/portfolio
   posts:
     path: content/posts
     url: "/posts/[slug]/"
@@ -71,6 +76,22 @@ collections_config:
         comment: Define which categories this post should belong to on the blog page.
       categories[*]:
         type: text
+      images:
+        type: array
+        options:
+          structures: _structures.post_image
+    _structures:
+      post_image:
+        values:
+          - value:
+              image:
+              image_alt:
+            _inputs:
+              image:
+                type: image
+                options:
+                  paths:
+                    uploads: images/blog
   data:
     path: data
     disable_url: true
