@@ -18,7 +18,7 @@ content_blocks:
   - _bookshop_name: sections/gallery
     content: 
     gallery_images: 
-SEO_options:
+seo_options:
   description:
   featured_image: 
   og_type: article

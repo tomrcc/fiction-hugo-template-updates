@@ -1,6 +1,6 @@
 ---
-Title:
-SEO_options:
+title:
+seo_options:
   description:
   featured_image: 
   og_type: 

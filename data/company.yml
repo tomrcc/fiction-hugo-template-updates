@@ -18,6 +18,7 @@ social_media:
   linkedin: "#"
   google: "#"
   instagram: "#"
-copyright_html: <p>&copy; 2013-2017 All rights reserved. <br>
-                                Design and Developed By <a href="https://themefisher.com">Themefisher.com</a></p>
+copyright_start_year: "2013"
+copyright_statement: "All rights reserved."
+developed_by_statement: Design and Developed By [Themefisher.com](https://themefisher.com)
 google_maps_api_key: ""

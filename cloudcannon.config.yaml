@@ -18,6 +18,7 @@ commit_templates:
 collections_config:
   pages:
     path: content
+    url: "/[full_slug]/"
     glob: 
       - "*.md"
       - "portfolios/_index.md"
@@ -32,6 +33,7 @@ collections_config:
         path: .cloudcannon/schemas/page.md
   portfolios:
     path: content/portfolios
+    url: "/portfolios/[slug]/"
     glob: 
       - "!_index.md"
     schemas:
@@ -45,6 +47,7 @@ collections_config:
         type: text
   posts:
     path: content/posts
+    url: "/posts/[slug]/"
     glob: 
       - "!_index.md"
     schemas:
@@ -67,7 +70,7 @@ collections_config:
         comment: Add your key if you want to use google maps features within the site
 
 _inputs:
-  SEO_options:
+  seo_options:
     type: object
     options:
       preview:

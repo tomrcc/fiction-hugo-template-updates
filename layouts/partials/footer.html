@@ -54,7 +54,20 @@
                 <div class="text-center">
                     <div class="col-md-12">
                         <div class="copyright">
-                            {{ .Site.Data.company.copyright_html | safeHTML }}
+                            <p>
+                                <span>&#169;</span>
+                                <span>
+                                    {{ if eq .Site.Data.company.copyright_start_year time.Now.Year }}
+                                    {{ .Site.Data.company.copyright_start_year }} 
+                                    {{ else }}
+                                    {{ .Site.Data.company.copyright_start_year }} - {{ time.Now.Year }}
+                                    {{ end }}
+                                </span> 
+                                <span>
+                                    {{ .Site.Data.company.copyright_statement}}
+                                </span>
+                            </p>
+                            <p>{{ .Site.Data.company.developed_by_statement | markdownify }}</p>
                         </div>
                     </div>
                 </div>
