@@ -44,6 +44,15 @@ collections_config:
       category:
         type: text
         comment: Define which category this portfolio item should belong to in the portfolios list.
+      portfolio_details:
+        type: object
+        options:
+          preview:
+            icon: work
+            image:
+              - key: image
+            text:
+              - key: heading
   posts:
     path: content/posts
     url: "/posts/[slug]/"

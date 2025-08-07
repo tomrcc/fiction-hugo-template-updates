@@ -7,7 +7,7 @@ hero_blocks:
 category: category-3
 portfolio_details:
   heading: Our Portfolio
-  date: '2015-03-16'
+  date: 2015-03-16T00:00:00Z
   image: /images/portfolio/portfolio-img6.jpg
   image_alt: Portfolio
   title: Merit wogmonk

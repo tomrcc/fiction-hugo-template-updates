@@ -10,7 +10,7 @@
                 </div>
                 <div class="col-md-12 col-lg-6 portfolio-single-description padding-0">
                     <div class="portfolio-single-info">
-                        <p class="date">{{ .Params.date }}</p>
+                        <p class="date">{{ .Params.date | time.Format ":date_medium" }}</p>
                         <h3 class="portfolio-single-title">{{ .Params.title }}</h3>
                         <div class="row margin-0">
                             <div class="col-md-12 protfolio-list padding-0">
