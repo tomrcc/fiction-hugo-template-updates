@@ -2,7 +2,11 @@ baseURL = 'http://example.org/'
 languageCode = 'en-us'
 title = 'fiction-hugo-template'
 
-Paginate = 3
+[pagination]
+pagerSize = 3
+
+[build]
+writeStats = false
 
 [taxonomies]
 categories = "categories"
@@ -13,6 +17,10 @@ unsafe = true
 
 [module]
 replacements = "local/component-library -> ../component-library"
+  [module.hugoVersion]
+    extended = true
+    min = '0.128.0'
+
 
 [[module.imports]]
 path = 'local/component-library'
