@@ -18,11 +18,9 @@ commit_templates:
 collections_config:
   pages:
     path: content
-    url: "/[full_slug]/"
+    url: "/[slug]/"
     glob: 
-      - "**/*.md"
-      - "!portfolios/*"
-      - "!posts/*"
+      - "*.md"
       - "portfolios/_index.md"
       - "posts/_index.md"
     icon: text_ad
