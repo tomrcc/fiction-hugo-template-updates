@@ -4,7 +4,8 @@
   "description": "Starter template for hugo, alpine, bookshop",
   "main": "index.js",
   "scripts": {
-    "start": "run-p javascript hugo server",
+    "start": "run-p javascript dev",
+    "dev": "hugo server",
     "build": "hugo --source ./ --destination public --baseURL /",
     "javascript": "esbuild assets/js/index.js --bundle --outfile=assets/js/build.js",
     "bookshop-update": "npx @bookshop/up@latest",
