@@ -21,10 +21,10 @@ collections_config:
     url: "/[full_slug]/"
     glob: 
       - "**/*.md"
-      - "portfolios/_index.md"
-      - "posts/_index.md"
       - "!portfolios/*"
       - "!posts/*"
+      - "portfolios/_index.md"
+      - "posts/_index.md"
     icon: text_ad
     _enabled_editors:
       - visual
