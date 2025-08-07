@@ -84,7 +84,7 @@ collections_config:
         type: text
         comment: The text used for this post's link in the list of posts.
       description:
-        type: text
+        type: textarea
         comment: Used as the description for the post's preview in the list of posts.
     _structures:
       post_image:
@@ -122,6 +122,8 @@ _inputs:
     type: array
     options:
       structures: _structures.hero_blocks
+      max_items: 1
+      max_items_message: Only define one hero block, so that you don't have more than one <h1> element on a page.
   text_content:
     type: markdown
   seo_options:
