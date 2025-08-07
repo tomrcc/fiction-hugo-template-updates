@@ -16,7 +16,7 @@ portfolio_details:
   project_url: '#'
 content_blocks:
   - _bookshop_name: sections/gallery
-    content: >-
+    text_content: >-
       I had not long to wait before a stealthy sound apprised me of their
       nearness, and then a <br>war-bonneted, paint-streaked face was thrust
       cautiously around the shoulder of the cliff, and <br>savage eyes looked

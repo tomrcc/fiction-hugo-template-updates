@@ -116,7 +116,8 @@ _inputs:
       structures: _structures.hero_blocks
   type:
     hidden: true
-
+  text_content:
+    type: markdown
 
 _editables:
   content:

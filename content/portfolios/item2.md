@@ -16,7 +16,7 @@ portfolio_details:
   project_url: '#'
 content_blocks:
   - _bookshop_name: sections/gallery
-    content: I had not long to wait before a stealthy sound apprised me of their nearness, and then a <br>war-bonneted, paint-streaked face was thrust cautiously around the shoulder of the cliff, and <br>savage eyes looked into mine. That he could see me in the dim light of the cave I was sure for <br>the early morning sun was falling full upon me through the opening.
+   text_content: I had not long to wait before a stealthy sound apprised me of their nearness, and then a <br>war-bonneted, paint-streaked face was thrust cautiously around the shoulder of the cliff, and <br>savage eyes looked into mine. That he could see me in the dim light of the cave I was sure for <br>the early morning sun was falling full upon me through the opening.
     gallery_images: 
       - _bookshop_name: simple/gallery-image
         image: /images/portfolio/single-portfolio-img2.jpg

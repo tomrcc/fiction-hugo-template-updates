@@ -15,7 +15,7 @@ portfolio_details:
   project_url:
 content_blocks:
   - _bookshop_name: sections/gallery
-    content: 
+    text_content: 
     gallery_images: 
 seo_options:
   description:

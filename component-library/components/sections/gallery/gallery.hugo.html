@@ -2,7 +2,7 @@
     <div class="container">
       <div class="row">
         <div class="gallery-description text-center">
-          <p>{{ .content | safeHTML }}</p>
+          {{ .text_content | markdownify }}
         </div>
         {{ range .gallery_images }}
             {{ partial "bookshop" (slice "simple/gallery-image" .)}}
