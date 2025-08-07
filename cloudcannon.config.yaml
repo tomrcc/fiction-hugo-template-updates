@@ -43,6 +43,7 @@ collections_config:
     _inputs:
       category:
         type: text
+        comment: Define which category this portfolio item should belong to in the portfolios list.
   posts:
     path: content/posts
     url: "/posts/[slug]/"
@@ -58,6 +59,7 @@ collections_config:
     _inputs:
       categories:
         type: array
+        comment: Define which categories this post should belong to on the blog page.
       categories[*]:
         type: text
   data:
