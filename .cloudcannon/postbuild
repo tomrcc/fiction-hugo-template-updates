@@ -1,2 +1,2 @@
 npx "@bookshop/generate"
-npx -y pagefind --source public
+npx -y pagefind --site public
