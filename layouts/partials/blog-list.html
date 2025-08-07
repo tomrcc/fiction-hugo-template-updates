@@ -58,7 +58,7 @@
                         </div>
                     </div>
             {{end}}
-            {{ if gt (len (where .Site.Pages "Section" "posts")) 5 }}
+            {{ if gt .Paginator.TotalPages 1 }}
                 <div class="col-md-12">
                     <div class="see-all-post text-center">
                     {{ if .Paginator.HasPrev }}

@@ -1,0 +1,35 @@
+baseURL: http://example.org/
+languageCode: en-us
+title: fiction-hugo-template
+
+ignoreFiles:
+  - public/js/build.js
+  - node_modules/
+  - resources/_gen/
+  - \.log$
+  - \.DS_Store$
+  - \.hugo_build.lock$
+
+pagination:
+  pagerSize: 3
+
+build:
+  writeStats: false
+
+taxonomies:
+  categories: categories
+  category: category
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+module:
+  replacements: local/component-library -> ../component-library
+  hugoVersion:
+    extended: true
+    min: 0.128.0
+  imports:
+    - path: local/component-library
+    - path: github.com/cloudcannon/bookshop/hugo/v3
