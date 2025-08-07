@@ -227,7 +227,7 @@ content_blocks:
       ad beatae sed dolorem doloribus accusamus
     link:
       _bookshop_name: generic/link
-      url: '#'
+      url: '/contact/'
       content: Contact Us
     map:
       _bookshop_name: generic/map
