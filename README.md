@@ -24,18 +24,15 @@ Fiction was made by [Themefisher](https://themefisher.com/) and converted to Hug
 
 Get a workflow going to see your site's output (with [CloudCannon](https://app.cloudcannon.com/) or Hugo locally).
 
-## Develop
-
-Fiction was built with [Hugo](https://gohugo.io/) version `0.96.0`, but should support newer versions as well.
-### Prerequisites
+## Prerequisites
 * Hugo [install](https://gohugo.io/getting-started/installing/). `brew install hugo`
 * Go [install](https://go.dev/learn/). `brew install go`
 
+[Hugo installation documentation](https://gohugo.io/installation/).
+
 ### Quickstart
 1. In the terminal at the root dir, run: `npm i`
-2. Start site and bookshop: `npm run dev` OR site alone: `npm run start`
-* By default bookshop live browser will be at : [http://localhost:30775/](http://localhost:30775/)
-* By default the site will be at : [http://localhost:1313/](http://localhost:1313/)
+2. Start local development server: `npm run start`
 
 ## Editing
 
@@ -75,6 +72,9 @@ This component uses any number of images behind some heading text
 
 #### Video hero
 
-This component uses a video behind some heading text
+This component uses a video behind some heading text.
+
+- **Desktop/Chrome**: Uses jQuery Vide plugin (existing functionality)
+- **Safari/iOS/Mobile**: Uses HTML5 `<video>` element with Safari-specific attributes
 
 ![Fiction template screenshot](images/_index-video.png)

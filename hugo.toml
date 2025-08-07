@@ -2,6 +2,16 @@ baseURL = 'http://example.org/'
 languageCode = 'en-us'
 title = 'fiction-hugo-template'
 
+# Ignore files to improve performance in dev env
+ignoreFiles = [
+  "public/js/build.js",
+  "node_modules/",
+  "resources/_gen/",
+  "\\.log$",
+  "\\.DS_Store$",
+  "\\.hugo_build.lock$"
+]
+
 [pagination]
 pagerSize = 3
 
@@ -20,7 +30,6 @@ replacements = "local/component-library -> ../component-library"
   [module.hugoVersion]
     extended = true
     min = '0.128.0'
-
 
 [[module.imports]]
 path = 'local/component-library'

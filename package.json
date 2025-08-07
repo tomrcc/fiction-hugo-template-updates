@@ -4,12 +4,8 @@
   "description": "Starter template for hugo, alpine, bookshop",
   "main": "index.js",
   "scripts": {
-    "start": "run-p javascript hugo-server",
-    "dev": "run-p javascript-dev hugo-server",
-    "init": "npx @bookshop/init@latest",
-    "hugo-server": "hugo server -D --watch",
+    "start": "run-p javascript hugo server",
     "build": "hugo --source ./ --destination public --baseURL /",
-    "javascript-dev": "esbuild assets/js/index.js --bundle --outfile=assets/js/build.js --watch",
     "javascript": "esbuild assets/js/index.js --bundle --outfile=assets/js/build.js",
     "bookshop-update": "npx @bookshop/up@latest",
     "fix-hugo": "hugo mod clean",
@@ -29,7 +25,6 @@
   },
   "homepage": "https://github.com/CloudCannon/fiction-hugo-template#readme",
   "dependencies": {
-    "@bookshop/browser": "3.16.3",
     "@bookshop/generate": "3.16.3",
     "@bookshop/hugo-engine": "3.16.3",
     "alpinejs": "^3.9.5",
