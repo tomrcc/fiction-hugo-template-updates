@@ -19,11 +19,11 @@ collections_config:
   pages:
     path: content
     glob: 
+      - "*.md"
+      - "portfolios/_index.md"
+      - "posts/_index.md"
       - "!portfolios/*"
       - "!posts/*"
-      - "*.md"
-      - portfolios/_index.md
-      - posts/_index.md
     icon: text_ad
     _enabled_editors:
       - visual
