@@ -20,7 +20,7 @@ collections_config:
     path: content
     url: "/[full_slug]/"
     glob: 
-      - "*.md"
+      - "**/*.md"
       - "portfolios/_index.md"
       - "posts/_index.md"
       - "!portfolios/*"
