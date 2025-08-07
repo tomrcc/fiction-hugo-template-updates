@@ -23,7 +23,7 @@
                                             <div class="thumbnail portfolio-thumbnail">
                                                 <img src="{{ .Params.portfolio_details.image }}" alt="{{ .Params.portfolio_details.image_alt }}">
                                                 <div class="caption portfolio-caption">
-                                                    <p class="date">{{ .Params.portfolio_details.date }}</p>
+                                                    <p class="date">{{ .Params.portfolio_details.date | time.Format ":date_medium" }}</p>
                                                     <h3 class="portfolio-title">{{ .Params.portfolio_details.title }}</h3>
                                                 </div>
                                             </div>

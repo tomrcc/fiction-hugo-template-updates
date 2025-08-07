@@ -98,6 +98,14 @@ collections_config:
                 options:
                   paths:
                     uploads: images/blog
+            preview:
+              icon: image
+              image:
+                - key: image
+              text:
+                - key: image_alt
+              subtext: 
+                - key: image
   data:
     path: data
     disable_url: true
