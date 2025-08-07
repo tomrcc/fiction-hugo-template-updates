@@ -10,36 +10,44 @@
                 </div>
                 <div class="col-md-12 col-lg-6 portfolio-single-description padding-0">
                     <div class="portfolio-single-info">
-                        <p class="date">{{ .Params.date | time.Format ":date_medium" }}</p>
+                        {{ if .Params.date }}
+                            <p class="date">{{ .Params.date | time.Format ":date_medium" }}</p>
+                        {{ end }}
                         <h3 class="portfolio-single-title">{{ .Params.title }}</h3>
                         <div class="row margin-0">
+                            {{ with .Params.client }}
                             <div class="col-md-12 protfolio-list padding-0">
                                 <div class="col-md-4 col-sm-6 padding-0">
                                     <p>CLIENT</p>
                                 </div>
                                 <div class="col-md-8 col-sm-6 padding-0"><span class="colon">:</span>
-                                    <p>{{ .Params.client }}</p>
+                                    <p>{{ . }}</p>
                                 </div>
                             </div>
+                            {{ end }}
+                            {{ with .Params.services }}
                             <div class="col-md-12 protfolio-list padding-0">
                                 <div class="col-md-4 col-sm-6 padding-0">
                                     <p>SERVICES</p>
                                 </div>
                                 <div class="col-md-8 col-sm-6 padding-0"><span class="colon">:</span>
-                                    <p>{{ .Params.services }}</p>
+                                    <p>{{ . }}</p>
                                 </div>
                             </div>
+                            {{ end }}
+                            {{ with .Params.project_url }}
                             <div class="col-md-12 protfolio-list padding-0">
                                 <div class="col-md-4 col-sm-6 padding-0">
                                     <p>LAUNCH PROJECT</p>
                                 </div>
                                 <div class="col-md-8 col-sm-6 padding-0">
                                     <span class="colon">:</span>
-                                    <a class="web-addres" href="{{ .project_url }}" target="_blank">
-                                        {{ .Params.project_url }}
+                                    <a class="web-addres" href="{{ . }}" target="_blank">
+                                        {{ . }}
                                     </a>
                                 </div>
                             </div>
+                            {{ end }}
                         </div>
                     </div>
                 </div>
