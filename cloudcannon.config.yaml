@@ -1,9 +1,27 @@
+timezone: Etc/UTC
+
+source_editor:
+  tab_size: 2
+  theme: monokai
+  show_gutter: true
+
+paths:
+  static: static
+  uploads: static/images
+
+commit_templates:
+  - label: Default message
+    template_string: '[default_commit_message]'
+  - label: Custom message
+    template_string: '{message}'
+
 collections_config:
   pages:
     path: content
     glob: 
       - "!portfolios/*"
       - "!posts/*"
+      - "*.md"
       - portfolios/_index.md
       - posts/_index.md
     icon: text_ad
@@ -22,6 +40,9 @@ collections_config:
     icon: work
     _enabled_editors:
       - visual
+    _inputs:
+      category:
+        type: text
   posts:
     path: content/posts
     glob: 
@@ -33,9 +54,57 @@ collections_config:
     _enabled_editors:
       - content
       - visual
+    _inputs:
+      categories:
+        type: array
+      categories[*]:
+        type: text
   data:
     path: data
     disable_url: true
     _inputs:
       google_maps_api_key:
         comment: Add your key if you want to use google maps features within the site
+
+_inputs:
+  SEO_options:
+    type: object
+    options:
+      preview:
+        icon: query_stats
+        text:
+          - 'Search engine optimization'
+        subtext:
+          - key: page_description
+          - 'Update SEO values for the page'
+  hero_blocks:
+    type: array
+    options:
+      structures: _structures.hero_blocks
+
+
+
+_editables:
+  content:
+    blockquote: true
+    bold: true
+    format: p h2 h3 h4
+    italic: true
+    strike: true
+    subscript: true
+    superscript: true
+    underline: true
+    link: true
+    bulletedlist: true
+    indent: true
+    numberedlist: true
+    outdent: true
+    code: true
+    embed: true
+    horizontalrule: true
+    image: true
+    undo: true
+    redo: true
+    removeformat: true
+    copyformatting: true
+    image_size_attributes: true
