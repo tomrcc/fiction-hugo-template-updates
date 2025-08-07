@@ -56,6 +56,8 @@ collections_config:
       portfolio_details.image:
         type: image
         options:
+          required: true
+          required_message: Portfolio must have an image.
           paths:
             uploads: images/portfolio
   posts:
@@ -80,6 +82,8 @@ collections_config:
         type: array
         options:
           structures: _structures.post_image
+          min_items: 1
+          min_items_message: Must have at least one image for this post.
       link:
         type: text
         comment: The text used for this post's link in the list of posts.

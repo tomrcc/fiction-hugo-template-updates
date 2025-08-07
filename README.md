@@ -25,7 +25,7 @@ Fiction was made by [Themefisher](https://themefisher.com/) and converted to Hug
 Get a workflow going to see your site's output (with [CloudCannon](https://app.cloudcannon.com/) or Hugo locally).
 
 ## Prerequisites
-* Hugo [install](https://gohugo.io/getting-started/installing/). `brew install hugo`
+* Hugo [install](https://gohugo.io/getting-started/installing/) (version >= 0.128.0). `brew install hugo`
 * Go [install](https://go.dev/learn/). `brew install go`
 
 [Hugo installation documentation](https://gohugo.io/installation/).
