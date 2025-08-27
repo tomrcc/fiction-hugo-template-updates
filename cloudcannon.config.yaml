@@ -19,10 +19,6 @@ collections_config:
   pages:
     path: content
     url: "/[slug]/"
-    glob: 
-      - "*.md"
-      - "portfolios/_index.md"
-      - "posts/_index.md"
     icon: text_ad
     _enabled_editors:
       - visual
